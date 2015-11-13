@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fitxer">
+            <items>
+              <MenuItem fx:id="menSortir" mnemonicParsing="false" onAction="#sortir" text="Sortir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Editar">
+            <items>
+              <MenuItem fx:id="menCopiar" mnemonicParsing="false" onAction="#copiar" text="Copiar" />
+                  <MenuItem fx:id="menTallar" mnemonicParsing="false" onAction="#tallar" text="Tallar" />
+                  <MenuItem fx:id="menEnganxar" mnemonicParsing="false" onAction="#enganxar" text="Enganxar" />
+                  <MenuItem fx:id="menDesfer" mnemonicParsing="false" onAction="#desfer" text="Desfer" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Opcions">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Font" />
+                  <MenuItem mnemonicParsing="false" text="Tamany" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </MenuBar>
+      <TextArea fx:id="contenedorTexto" layoutX="6.0" layoutY="74.0" prefHeight="315.0" prefWidth="587.0" AnchorPane.bottomAnchor="6.5" AnchorPane.leftAnchor="6.5" AnchorPane.rightAnchor="6.5" AnchorPane.topAnchor="78.5" />
+      <ToolBar layoutY="29.0" prefHeight="45.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+        <items>
+          <Button mnemonicParsing="false" text="Button" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
